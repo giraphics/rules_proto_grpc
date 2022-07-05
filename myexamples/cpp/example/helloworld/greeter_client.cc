@@ -28,7 +28,7 @@
 #include <grpcpp/client_context.h>
 #include <grpcpp/create_channel.h>
 #include <grpcpp/security/credentials.h>
-#include "myexamples/cpp/example/helloworld/proto/helloworld.grpc.pb.h"
+#include "myexamples/cpp/example/helloworldjs/proto/helloworld.grpc.pb.h"
 
 using grpc::Channel;
 using grpc::ClientContext;

@@ -5,7 +5,7 @@ package(default_visibility = ["//visibility:public"])
 
 cpp_grpc_library(
     name = "helloworld",
-    protos = ["//myexamples/cpp/example/helloworld/proto:helloworld_proto"],
+    protos = ["//myexamples/cpp/example/helloworldjs/proto:helloworld_proto"],
 )
 
 cc_binary(

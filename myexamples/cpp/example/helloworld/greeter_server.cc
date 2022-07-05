@@ -28,7 +28,7 @@
 #include <grpcpp/server_builder.h>
 #include <grpcpp/server_context.h>
 #include <grpcpp/security/server_credentials.h>
-#include "myexamples/cpp/example/helloworld/proto/helloworld.grpc.pb.h"
+#include "myexamples/cpp/example/helloworldjs/proto/helloworld.grpc.pb.h"
 
 using grpc::Server;
 using grpc::ServerBuilder;
@@ -45,7 +45,7 @@ using std::chrono::system_clock;
 class GreeterServiceImpl final : public Greeter::Service {
   Status SayHello(ServerContext* context, const HelloRequest* request,
                   HelloReply* reply) override {
-    std::string prefix("Hello ");
+    std::string prefix("From C++ Server: Hello ");
     reply->set_message(prefix + request->name());
     return Status::OK;
   }
